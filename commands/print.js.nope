@@ -1,0 +1,53 @@
+
+//Ehkä tästä voi joskus jotain vielä kehitellä, nykyisellään turha koska kyseiset objektit aivan liian isoja printattavaksi.
+//Ehkä objektin voisi postata pastebiniin? -> pastebin API
+
+/*const logger = require("../logger.js");
+
+module.exports = {
+	name: "print",
+    description: "Prints the discord.js object (message/user/guild/channel) of the given type for the given id.",
+    usage: "[type] [id]",
+	execute(message, args, client) {
+        //var arr = args.split(" ");
+        var guild = message.guild.id;
+        var ch = message.channel.id;
+        logger.debug(args);
+        switch(args[0]) {
+            case "message": message.channel.send(getMessage(args[1], client, ch)); break;
+            case "user": message.channel.send(getUser(args[1], client)); break;
+            case "guild": message.channel.send(getGuild(args[1], client)); break;
+            case "channel": message.channel.send(getChannel(args[1], client)); break;
+            default: message.channel.send("ei sitä komentoa noin käytetä"); break;
+        }
+	},
+};
+
+function getMessage(id, client, ch) {
+    var d = client.channels.get(ch).fetchMessage(id)
+    .then(message => {logger.debug(message); return message;})
+    .catch(err => {logger.error(err); return "Ei löytynyt viestiä";});
+}
+
+function getUser(id, client) {
+    var d = client.users.get(id);
+    logger.debug(d);
+    if(!d) return "Ei löytynyt käyttäjää";
+    return d;
+}
+
+function getGuild(id, client) {
+    var d = client.guilds.get(id);
+    logger.debug(d);
+    if(!d) return "Ei löytynyt kiltaa";
+    return d;
+}
+
+function getChannel(id, client) {
+    var d = client.channels.get(id);
+    logger.debug(d);
+    if(!d) return "Ei löytynyt kanavaa";
+    return d;
+}
+
+*/

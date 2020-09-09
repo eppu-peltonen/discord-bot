@@ -1,0 +1,29 @@
+# Packages
+node_modules
+
+# Authentication
+config.json
+
+# Leaderboards
+leaderboards/
+
+# Misc
+.vscode/
+start.bat
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+build
+
+
+
